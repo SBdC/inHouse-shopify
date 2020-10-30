@@ -20,9 +20,7 @@
   <main role="main">
 
     {{ content_for_layout }}
-<h1>this not working , jsss louise
 
-</h1>
     {% include 'footer'%}
   </main>
 
@@ -31,10 +29,12 @@
   {% if settings.show_multiple_currencies %}
     {{ "//cdn.shopify.com/s/javascripts/currencies.js" | script_tag }}
     {{ "jquery.currencies.min.js" | asset_url | script_tag }}
+    {{ '//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js' | script_tag }}
   {% endif %}
   {% include 'currencies' %}
   {{ 'slick.min.js' | asset_url | script_tag }}
   {{ 'application.js' | asset_url | script_tag }}
+ 
 </body>
 
 </html>
