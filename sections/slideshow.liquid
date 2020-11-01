@@ -99,8 +99,10 @@
     </div>
     {% endif %}
 
-    <h1> {{ block.settings.title }}</h1>
+  
+
     <div class="slide-content">
+      <h1> {{ block.settings.title }}</h1>
       {% if block.settings.content != blank %}
         <p>{{ block.settings.content }}</p>
       {% endif %}
@@ -111,7 +113,6 @@
           {% else %}
           {{ 'general.shop.shop_now' | t }}
         </a>
-
      {% endif %}
 
     </div>
