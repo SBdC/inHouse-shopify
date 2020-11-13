@@ -24,7 +24,7 @@
   {% assign can_add_to_cart = true %}
 {% endif %}
 
-<form id="add-to-cart-form" action="/cart/add" method="post" enctype="multipart/form-data" data-variants="{{ variants_with_quantity_json | url_param_escape }}" >
+<form id="add-to-cart-form" action="/cart/add" method="post" enctype="multipart/form-data" data-variants="{{ variants_with_quantity_json | url_param_escape }}">
   {% if has_multiple_options or has_multiple_variants %}
 
     {% for option in product.options_with_values %}
